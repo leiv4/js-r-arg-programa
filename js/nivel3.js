@@ -53,7 +53,7 @@
     Los archivos CSS consisten en "bloques de declaración". Cada bloque de
     declaración está compuesto de un "selector" y de un conjunto de reglas de estilo
     visuales. Una declaración se ve así:
-    
+
     [selector] {
       nombre-de-estilo: valor;
       nombre-de-estilo: valor;
@@ -86,15 +86,13 @@
     La lista de las propiedades de CSS es muy grande, podés leer más acá:
     https://www.w3.org/TR/CSS21/propidx.html
 
-    No te preocupés, no hace falta recordar todo esto ahora mismo!
+    No te preocupes, no hace falta recordar todo esto ahora mismo!
 */
-
 
 /*
     Uff, muchas cosas nuevas! Volvamos a JavaScript y veamos como podemos
     interactuar con HTML.
 */
-
 
 /*
     Elementos de Acceso
@@ -105,7 +103,7 @@
     El DOM es la representación en JavaScript del elemento HTML que está siendo
     utilizado. EL DOM está disponible bajo una variable global especial llamada
     "document". Podemos obtener nodos específicos (elementos de página) con el
-    metodo DOM: '.querySelector'.
+    método DOM: '.querySelector'.
 
     Obtengamos nuestro link de Twitter desde la página.
 
@@ -124,18 +122,13 @@
 //       variable llamada nuestroTitulo.
 //       Utilizá console.log para ver lo que obtuviste!
 
-
-
-
-
-
 /*
     Obteniendo elementos similares.
     ========================
 
     También podemos obtener todos los elementos con la misma etiqueta. En nuestro
     pie de página tenemos una lista desordenada (<ul>), con tres elementos de lista (<li>) adentro.
-    Obtengamoslos todos con un array de los elementos de la página. Cuando querramos obtener multiples elementos,
+    Obtengámoslo todos con un array de los elementos de la página. Cuando queramos obtener multiples elementos,
     podemos utilizar el método '.querySelectorAll', el cual nos dará una lista con las coincidencias.
 
     Ejemplo:
@@ -146,32 +139,17 @@
 
 // TAREA: Obtené todos los elementos <li> de la página en una variable llamada mediaLinks.
 
-
-
-
-
-
-// TAREA: Ahora utilizá console.log para ver la cantidad de 
+// TAREA: Ahora utilizá console.log para ver la cantidad de
 // elementos li que hay con mediaLinks.length
-
-
-
-
-
 
 // TAREA: ¿Te acordás de los bucles del nivel 2? Usando lo que sabés de ellos, realizá iteraciones
 //      sobre cada item de mediaLinks y mostralos en pantalla con console.log
 
-
-
-
-
-
 /*
     Propiedades de los elementos
     ==================
-    
-    Ok, hasta acá todo bien. Peeeroo, ¿que pasa si queremos obtener SOLO el texto
+
+    Ok, hasta acá todo bien. Pero, ¿que pasa si queremos obtener SOLO el texto
     de nuestra etiqueta 'h1'?
     Los elementos de página tienen una propiedad para esto: '.textContent'.
 
@@ -184,16 +162,11 @@
 // TAREA: Obtené el contenido de nuestro elemento 'h1'
 // y utilizá console.log para mostrarlo.
 
-
-
-
-
-
 /*
     Editar el contenido de la página
     ====================
 
-    Podemos simplemente cambiar el contenido de las étiquetas utilizando la propiedad que 
+    Podemos simplemente cambiar el contenido de las etiquetas utilizando la propiedad que
     vimos recién, '.textContent'.
 
     Ejemplo:
@@ -205,14 +178,10 @@
 
 // TAREA: Hagamos un nuevo título! Cambiá el contenido de nuestro 'h1' y ponele lo que quieras.
 
-
-
-
-
 /*
     Editando atributos
     ==================
-    
+
     También podemos cambiar y establecer atributos en nuestros elementos.
 
     Ejemplo:
@@ -222,11 +191,6 @@
 */
 
 // TAREA: Actualizá el valor del atributo 'src' de nuestra etiqueta 'img' a "img/kittens.jpeg".
-
-
-
-
-
 
 /*
     Editando estilos
@@ -247,11 +211,6 @@
 */
 
 // Tarea: Obtené cualquier elemento de la página y cambiale algunos estilos.
-
-
-
-
-
 
 /*
    Creando nuevos nodos (Elementos)
@@ -277,11 +236,6 @@
 //       en nuestra cabecera.
 //
 // P.S. También les podés dar estilos al nuevo nodo que creaste.
-
-
-
-
-
 
 ////////////////////////////////////////////////////////////////////////////
 // ¡Felicidades! ¡Has terminado el Nivel 3 de JavaScript Básico!          //

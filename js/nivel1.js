@@ -20,7 +20,6 @@
     Cuando estás escribiendo código que querés que la máquina ejecute, ponelos AFUERA de los bloques de comentario.
 */
 
-
 /*
     Mostrando texto
     ===============
@@ -40,21 +39,20 @@
 
 // Tarea: Ahora te toca a vos! Acá abajo escribí una alerta que diga "Hola mundo!"
 
+// alert("Hola Mundo!");
 
 // Tarea: Una vez que la alerta funcione, comentala poniendo '//' en la línea donde está el código y guardá los cambios.
 // Una vez que recargás la página, ya no debería aparecer más.
 
-
 // Tarea: Ahora probá hacer un console.log de un mensaje que queramos.
 
+// console.log("Hola Mundo!");
 
 // Consejo: Para recargar el navegador podemos apretar 'CMD + R' en Mac y 'CTRL + R' en
 //      Windows.
 
-
 // Consejo: El atajo del teclado para guardar cambios a un archivo es 'CMD + S' en Mac y 'CTRL + S' en
 //      Windows.
-
 
 /*
     Variables
@@ -85,8 +83,8 @@
     Cadenas de texto (String), Numeros (Number), Booleanos (Boolean), etc.
 
     Qué son cada uno?
-    String - Un set de caracteres, palabras), o frases que ponemos entre comillas (dobles o simples, no importa),
-    como por ejemplo 'hola mundo!'.
+    String - (Un set de caracteres, palabras), o frases que ponemos entre comillas (dobles o simples, no importa),
+    como por ejemplo 'Hola mundo!'.
     Esto puede ser cualquier cosa, incluso números.
 
     Números - Pueden ser enteros (ej.: 5) o decimales (ej.: 5.21). No van entre comillas.
@@ -102,6 +100,8 @@
 
 // TAREA: Creá 2 variables indefinidas, llamadas numeroUno y numeroDos.
 
+// let numeroUno;
+// let numeroDos;
 
 /*
     Podés usar el nombre de tus variables pare representar qué información tienen adentro, por ejemplo:
@@ -112,20 +112,18 @@
     Esto va a mostrar un cartelito con el texto 'Hola Mundo!'
 */
 
-// Crear 2 variables nuevas, una con tu nombre, la segunda con tu edad. Dales un nombre apropriado y
+// Crear 2 variables nuevas, una con tu nombre, la segunda con tu edad. Dales un nombre apropiado y
 // mostralas con un alert.
-
 
 // Consejo: para mostrar 2 variables de texto al mismo tiempo, las podés unir usando el signo '+'. Ejemplo:
 
 /*
-* let nombre = 'Fabricio'
-* let apellido = 'Sodano'
-*
-* alert(nombre + apellido)
-*
-* */
-
+ * let nombre = 'Fabricio'
+ * let apellido = 'Sodano'
+ *
+ * alert(nombre + apellido)
+ *
+ * */
 
 /*
     Constantes
@@ -133,7 +131,7 @@
 
     Una constante es como una variable, pero se le da un valor cuando es creado y luego no se puede cambiar mientras
     se ejecuta el programa.
-    En otras palaras, una constante siempre tiene la misma información durante la ejecución de un programa.
+    En otras palabras, una constante siempre tiene la misma información durante la ejecución de un programa.
 
     Para declarar (crear) una constante, usamos la palabra reservada (keyword) `const`.
 
@@ -150,9 +148,7 @@
 
 // TAREA: Crear una constante y mostrarla con un alert
 
-
 // TAREA: Intentar asignar un valor a una constante y ver qué pasa (mirar la consola)
-
 
 // Consejo: No te olvides de comentar (//) los alerts y los errores intencionales (como en la tarea anterior) para
 // que los alerts no aparezcan cada vez, y para que los errores no hagan que el programa se detenga.
@@ -161,7 +157,7 @@
     Matemática - Operadores aritméticos (sumas, restas, multiplicación y división)
     ============================
 
-    Hay muchos 'operadores' diferentes en programación. Veamos los operadores aritéticos ahora.
+    Hay muchos 'operadores' diferentes en programación. Veamos los operadores aritméticos ahora.
     JavaScript incluye operadores estándares (+, -, /, *) que se pueden usar para hacer operaciones matemáticas.
 
     Ejemplo:
@@ -182,7 +178,6 @@
 // * 3ra variable llamada resultadoMultiplicacion que va a ser igual a
 // la 1ra variable multiplicada (con el operador *) por la 2nda variable.
 // Mostrar el valor de resultadoMultiplicacion con un alert o un console.log
-
 
 /*
     Funciones
@@ -226,7 +221,7 @@
         console.log('hola!'); //Esta línea nunca se ejecuta
     }
 
-    Consejo: Podemos aceptar múltiples argumentos (tambien llamados parámetros) separándolos con una coma ','.
+    Consejo: Podemos aceptar múltiples argumentos (también llamados parámetros) separándolos con una coma ','.
 
          function nombreFunction(argumento1, argumento2) {
          }
@@ -239,11 +234,9 @@
 // Escribí código para que devuelva (return) la suma de numero1 y numero2
 // Ejecutá la función sumar y mostrá su resultado en la consola
 
-
 // TAREA: Ahora creemos otra función llamada 'restar'
 //       Que acepte 2 números como parámetro y los reste, y que devuelva ese valor.
 // Ejecutá la función con los números 5 y 1 y mostralos con console.log
-
 
 // Consejo: Sabías que en vez de pasar los números directamente a tu función podés crear variables con esos números
 // y pasarlos como parámetros? Probalo!
@@ -308,11 +301,11 @@
     Por ejemplo:
 
     3 < 4 evalúa a VERDADERO (TRUE), porque 3 es menor que 4.
-    1 + 1 === 3 evalía a FALSO (FALSE), porque 1 + 1 no es igual a 3.
+    1 + 1 === 3 evalúa a FALSO (FALSE), porque 1 + 1 no es igual a 3.
 */
 
 // TAREA: Tenemos 2 funciones de la tarea anterior -- 'sumar' y 'restar'
-//      Vamos a decirle a la máquina qué función tiene que correr, dependiendo del operador artmético (+, -, /, *, etc.)
+//      Vamos a decirle a la máquina qué función tiene que correr, dependiendo del operador aritmético (+, -, /, *, etc.)
 //
 //      Si el operador es '+', vamos a usar la función para sumar.
 //      Si no, vamos a usar la función para restar.
@@ -329,19 +322,18 @@
 
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
 
-
 /*
     'If' - 'Else if' - 'Else'
     ===================
 
     Bueno, y qué pasa si tenemos 4 operaciones aritméticas en nuestra calculadora? Bueno, entonces usamos una estructura así (pseudocódigo):
-    if(condicion)
+    if(condición)
         //algo
-    else if(condicion)
+    else if(condición)
         //algo
     else
         //algo que va a pasar si no se cumple ningún otra condición
-        
+
 
     Ejemplo:
 
@@ -354,15 +346,11 @@
         console.log('Nuestro número es igual a 7');
     }
 
-    Consejo: Podemos usar la cantidad de 'else if' que queramos uno después del otro, 
+    Consejo: Podemos usar la cantidad de 'else if' que queramos uno después del otro,
     el primero que es 'verdadero' es el único que pasa.
 */
 
 // TAREA: Creemos 2 funciones más: dividir y multiplicar.
-
-
-
-
 
 // TAREA: Reescribamos el if-else que teníamos y extendámolos, agregando:
 //       'else if' el 'operador' es igual a '-' - llamar a la función 'restar'
@@ -370,25 +358,21 @@
 //       'else if' el 'operador' es igual a '*' - llamar a la función 'multiplicar'.
 //       else console.log - "Perdón, no conozco ese operador".
 
-
-
-
-
 /*
     Operadores Booleanos
     =================
     Poner un signo de exclamación (!) antes de un valor Booleano nos da el valor OPUESTO.
     Este operador ! se llama el operador "not".
-    
+
     El resultado de una comparación es un valor Booleano, lo podemos guardar en una variable así:
 
     const bool = (1 < 2);
 
     Después podemos chequear si 'bool' es verdadero o falso (true o false) usando console.log
 
-    console.log(bool); // Devuelve veradero (TRUE), porque 1 es menor a 2
+    console.log(bool); // Devuelve verdadero (TRUE), porque 1 es menor a 2
     console.log(!bool); // devuelve "no verdadero"... es decir falso (FALSE)
-    console.log(bool); // El valor original no se ve afectado, sigue siendo veradero, TRUE
+    console.log(bool); // El valor original no se ve afectado, sigue siendo verdadero, TRUE
 
     También podemos asignar un valor booleano directamente a una variable o constante con
     las palabras reservadas (keywords) true y false:
@@ -397,10 +381,8 @@
     let maradonaMejorQuePele = true;
 */
 
-
 // TAREA: usando el operador !, Intentá invertir una variable (de true a false, o de false a true) e imprimí el
 // resultado en la consola.
-
 
 ////////////////////////////////////////////////////////////////////////////
 // Felicitaciones! Terminaste el Nivel 1 de la introducción a JavaScript! //

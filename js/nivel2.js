@@ -35,39 +35,28 @@
     Ejemplo:
 
     let animales = ['gato', 'perro', 'caballo'];
-    let cosasAleatorias = [2, 'libro', 'hoy es Sabado', 10];
+    let cosasAleatorias = [2, 'libro', 'hoy es Sábado', 10];
     let numeros = [1, 2, 8, 19];
 */
 
-// TAREA: Crea tu propio array, llamado comidasFavoritas, y escribi dentro algunas
+// TAREA: Crea tu propio array, llamado comidasFavoritas, y escribí dentro algunas
 //       cosas que te gustan.
-
-
-
-
-
-
 
 /*
     Tamaño del Array
     ================
-    
+
     Podemos verificar fácilmente cuántos elementos tenemos en nuestro Array con una propiedad:
     '.length'
 
     Ejemplo:
 
-    let cosasAleatorias = [2, 'libro', 'hoy es Sabado', 10];
+    let cosasAleatorias = [2, 'libro', 'hoy es Sábado', 10];
     console.log(cosasAleatorias.length); // Obtendremos 4.
 */
 
 // TAREA: Verifique cuántos valores tiene en su array comidasFavoritas.
-// imprimi utilizando console.log el resultado.
-
-
-
-
-
+// imprimí utilizando console.log el resultado.
 
 /*
     Uso del Array
@@ -81,7 +70,7 @@
 
     Ejemplo:
 
-    let cosasAleatorias = [2, 'libro', 'hoy es Sabado', 10];
+    let cosasAleatorias = [2, 'libro', 'hoy es Sábado', 10];
     let primerItem = cosasAleatorias[0];
     let segundoItem = cosasAleatorias[1]; y así sucesivamente
 
@@ -89,11 +78,6 @@
 */
 
 // TAREA: Obtené el tercer elemento de tu array comidasFavoritas e imprimilo utilizando console.log.
-
-
-
-
-
 
 /*
     Cambio de Valores en Arrays
@@ -115,17 +99,7 @@
 // TAREA: Toma tu array de comidasFavoritas y reemplaza el primer valor
 // con cualquier otra cosa.
 
-
-
-
-
-
 // TAREA: console.log todo el array para verificar.
-
-
-
-
-
 
 // TIP: ¡No te olvides que las posiciones de índice comienzan desde 0!
 
@@ -146,17 +120,7 @@
 
 // TAREA: Extendamos tu lista de comidasFavoritas y agreguemos un valor más.
 
-
-
-
-
-
 // TAREA: console.log todo el array para verificar.
-
-
-
-
-
 
 /*
     Nota acerca Arrays constantes
@@ -181,32 +145,21 @@
 
 // TAREA: Intenta crear un array como una constante y modifica los valores que contiene.
 
-
-
-
-
-
-
 // TAREA: Observa lo que sucede si agregas algo con.push(), cambias algo
 //       con notación de corchetes (array[1]) y
 //       asigna un nuevo array completamente nuevo a la constante
 
-
-
-
-
-
 /*
     Bucles
     ======
-    
+
     ¡La gente siempre ha sido perezosa, pero a veces avanza! A nosotros
-    no nos gusta repetir las mismas aburridas acciones una y otra vez, 
+    no nos gusta repetir las mismas aburridas acciones una y otra vez,
     así que buscamos formas de evitarlo.
 
-    La programación es igual. Por ejemplo, si quiero imprimir 10 veces 'JavaScript 
-    es increible!', ¿cuáles son mis opciones?. Por supuesto, puedo escribir 
-    diez líneas de código repitiendo la misma instrucción, pero también 
+    La programación es igual. Por ejemplo, si quiero imprimir 10 veces 'JavaScript
+    es increíble!', ¿cuáles son mis opciones?. Por supuesto, puedo escribir
+    diez líneas de código repitiendo la misma instrucción, pero también
     puedo decirle a la computadora que lo repita en lugar de que yo lo escriba 10 veces.
 
     Para esto usamos bucles.
@@ -246,11 +199,6 @@
 // TAREA: Usando un bucle 'while', decile a tu computadora que registre los números de
 //       diez a uno.
 
-
-
-
-
-
 /*
     Bucles for (para)
     ==========
@@ -261,17 +209,12 @@
     Ejemplo:
 
     let i;
-    for (i = 0; i <= 5; i = i + 1) {  // (punto de partida; condicion; paso)
+    for (i = 0; i <= 5; i = i + 1) {  // (punto de partida; condición; paso)
       console.log('Hola!');
     }
 */
 
 // TAREA: Imprimí cada 3er número del 3 al 22 usando un 'bucle for'.
-
-
-
-
-
 
 /*
     Iterando a traves de Arrays
@@ -296,15 +239,10 @@
 
 // TAREA: Probalo con tu comidasFavoritas array.
 
-
-
-
-
-
 /*
-    Bucles y Logica
+    Bucles y Lógica
     ===============
-    
+
     Traigamos bucles junto con las declaraciones if / else que aprendimos en
     nivel 1, y hagamos algo interesante.
 
@@ -338,11 +276,6 @@
 // 10% 3 = 1 - en 10 tenemos 3 * 3 + 1
 // 16% 4 = 0 - en 16 tenemos 4 * 4
 // 19% 4 = 3 - en 19 tenemos 4 * 4 + 3, etc.
-
-
-
-
-
 
 //////////////////////////////////////////////////////////////////////////////
 // ¡Felicidades! ¡Has terminado el Nivel 2 de JavaScript Básico!            //
