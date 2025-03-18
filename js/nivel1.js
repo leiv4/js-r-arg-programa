@@ -115,6 +115,11 @@
 // Crear 2 variables nuevas, una con tu nombre, la segunda con tu edad. Dales un nombre apropiado y
 // mostralas con un alert.
 
+// let nombre = "Nicolás";
+// let edad = 29;
+
+// alert("Mi nombre es " + nombre + " y tengo " + edad + " años.");
+
 // Consejo: para mostrar 2 variables de texto al mismo tiempo, las podés unir usando el signo '+'. Ejemplo:
 
 /*
@@ -129,8 +134,7 @@
     Constantes
     =========
 
-    Una constante es como una variable, pero se le da un valor cuando es creado y luego no se puede cambiar mientras
-    se ejecuta el programa.
+    Una constante es como una variable, pero se le da un valor cuando es creado y luego no se puede cambiar mientras se ejecuta el programa.
     En otras palabras, una constante siempre tiene la misma información durante la ejecución de un programa.
 
     Para declarar (crear) una constante, usamos la palabra reservada (keyword) `const`.
@@ -142,23 +146,27 @@
     Asignar un nuevo valor a la constante nos va a dar un error, no podemos hacer:
     circunferenciaTierraKm = 6400;
 
-    El nombre de las constantes también puede ser usado para representar la información que contienen,
-    como las variables.
+    El nombre de las constantes también puede ser usado para representar la información que contienen, como las variables.
 */
 
 // TAREA: Crear una constante y mostrarla con un alert
 
+// const boca = "Boca Juniors";
+// alert(boca);
+
 // TAREA: Intentar asignar un valor a una constante y ver qué pasa (mirar la consola)
+
+// const boca = "El único grande";
 
 // Consejo: No te olvides de comentar (//) los alerts y los errores intencionales (como en la tarea anterior) para
 // que los alerts no aparezcan cada vez, y para que los errores no hagan que el programa se detenga.
 
 /*
-    Matemática - Operadores aritméticos (sumas, restas, multiplicación y división)
+    Matemática - Operadores aritméticos (sumas, restas, multiplicación, división, módulo o resto de división y exponenciación)
     ============================
 
     Hay muchos 'operadores' diferentes en programación. Veamos los operadores aritméticos ahora.
-    JavaScript incluye operadores estándares (+, -, /, *) que se pueden usar para hacer operaciones matemáticas.
+    JavaScript incluye operadores estándares (+, -, /, *, %, **) que se pueden usar para hacer operaciones matemáticas.
 
     Ejemplo:
 
@@ -179,18 +187,21 @@
 // la 1ra variable multiplicada (con el operador *) por la 2nda variable.
 // Mostrar el valor de resultadoMultiplicacion con un alert o un console.log
 
+// const diez = 10;
+// const tres = 3;
+// let resultadoMultiplicacion = diez * tres;
+
 /*
     Funciones
     =========
 
     Una función es un set de instrucciones que hace la misma tarea cada vez que la llamamos.
-    Las funciones toman parámetros de entrada (ARGUMENTOS o INPUT), y calculan el resultado basado en esos valores y
-    devuelven (RETURN) un resultado ó OUTPUT.
+    Las funciones toman parámetros de entrada (ARGUMENTOS o INPUT), y calculan el resultado basado en esos valores y devuelven (RETURN) un resultado ó OUTPUT.
 
     Para crear una función vamos a usar el siguiente formato:
 
     function nombreFuncion(nombreArgumento) {
-        return nombreArgumento * 2;
+    return nombreArgumento * 2;
     };
 
     Esta función va a tomar sólo 1 argumento y va a devolver (RETURN) el argumento multiplicado por 2.
@@ -223,8 +234,8 @@
 
     Consejo: Podemos aceptar múltiples argumentos (también llamados parámetros) separándolos con una coma ','.
 
-         function nombreFunction(argumento1, argumento2) {
-         }
+    function nombreFunction(argumento1, argumento2) {
+    }
 */
 
 // TAREA: Es tu turno de crear una función!
@@ -234,12 +245,33 @@
 // Escribí código para que devuelva (return) la suma de numero1 y numero2
 // Ejecutá la función sumar y mostrá su resultado en la consola
 
+// function sumar(numero1, numero2) {
+//   return numero1 + numero2;
+// }
+
+// console.log(sumar(5, 1));
+
 // TAREA: Ahora creemos otra función llamada 'restar'
-//       Que acepte 2 números como parámetro y los reste, y que devuelva ese valor.
+// Que acepte 2 números como parámetro y los reste, y que devuelva ese valor.
 // Ejecutá la función con los números 5 y 1 y mostralos con console.log
+
+// function restar(numero1, numero2) {
+//   return numero1 - numero2;
+// }
+
+// console.log(restar(5, 1));
 
 // Consejo: Sabías que en vez de pasar los números directamente a tu función podés crear variables con esos números
 // y pasarlos como parámetros? Probalo!
+
+// const añoNacimiento = 1996;
+
+// const añoLustro = 2001;
+// function edadLustro(añoNacimiento, añoLustro) {
+//   return añoLustro - añoNacimiento;
+// }
+
+// console.log(edadLustro(añoNacimiento, añoLustro));
 
 // Consejo: Dejá las funciones como están, no las comentes, las vamos a usar de nuevo.
 
@@ -264,7 +296,7 @@
 
     Necesitamos que la condición sea un Booleano, recordemos: TRUE o FALSE. Es decir, verdadero o falso.
 
-    Por ejemplo, si tenemos un número, lo podemos comprar con algo.
+    Por ejemplo, si tenemos un número, lo podemos comparar con algo.
 
     Ejemplo
 
@@ -280,8 +312,7 @@
     Operadores de comparación
     ====================
 
-    Antes hicimos una introducción a los operadores aritméticos de JavaScript (+, -, *, /). Ahora es momento de
-    presentar el siguiente set de operadores, los 'Operadores de comparación'. Son usados para comparar valores:
+    Antes hicimos una introducción a los operadores aritméticos de JavaScript (+, -, *, /). Ahora es momento de presentar el siguiente set de operadores, los 'Operadores de comparación'. Son usados para comparar valores:
     >   // Mayor que
     <   // Menor que
     <=  // Menor o igual que (se escribe en este orden, =< no existe)
@@ -320,7 +351,25 @@
 // No se olviden de hacer un console.log para ver el resultado!
 //
 
+// const operador = "+";
+const num1 = 29;
+const num2 = 24;
+
+// if (operador === "+") {
+//   console.log(sumar(num1, num2));
+// } else {
+//   console.log(restar(num1, num2));
+// }
+
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
+
+// const operador = "-";
+
+// if (operador === "-") {
+//   console.log(restar(num1, num2));
+// } else {
+//   console.log(sumar(num1, num2));
+// }
 
 /*
     'If' - 'Else if' - 'Else'
@@ -352,11 +401,33 @@
 
 // TAREA: Creemos 2 funciones más: dividir y multiplicar.
 
+// function dividir(numero1, numero2) {
+//   return numero1 / numero2;
+// }
+
+// function multiplicar(numero1, numero2) {
+//   return numero1 * numero2;
+// }
+
 // TAREA: Reescribamos el if-else que teníamos y extendámolos, agregando:
 //       'else if' el 'operador' es igual a '-' - llamar a la función 'restar'
 //       'else if' el 'operador' es igual a '/' - llamar a la función 'dividir'.
 //       'else if' el 'operador' es igual a '*' - llamar a la función 'multiplicar'.
 //       else console.log - "Perdón, no conozco ese operador".
+
+// const operador = ".";
+
+// if (operador === "+") {
+//   console.log(sumar(num1, num2));
+// } else if (operador === "-") {
+//   console.log(restar(num1, num2));
+// } else if (operador === "/") {
+//   console.log(dividir(num1, num2));
+// } else if (operador === "*") {
+//   console.log(multiplicar(num1, num2));
+// } else {
+//   console.log("Perdón, no conozco ese operador. ");
+// }
 
 /*
     Operadores Booleanos
@@ -383,6 +454,9 @@
 
 // TAREA: usando el operador !, Intentá invertir una variable (de true a false, o de false a true) e imprimí el
 // resultado en la consola.
+
+// let verdadero = true;
+// console.log(!verdadero);
 
 ////////////////////////////////////////////////////////////////////////////
 // Felicitaciones! Terminaste el Nivel 1 de la introducción a JavaScript! //
