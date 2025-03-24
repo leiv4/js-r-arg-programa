@@ -19,7 +19,7 @@
     <script src="js/nivel1.js"></script>
 
     Así es como has estado ejecutando el archivo nivel1.js en un navegador. Ahora cambia
-     nivel1.js para apuntar a este archivo - nivel2.js.
+    nivel1.js para apuntar a este archivo - nivel2.js.
 
     ¡Ahora estás listo para comenzar!
 */
@@ -40,7 +40,9 @@
 */
 
 // TAREA: Crea tu propio array, llamado comidasFavoritas, y escribí dentro algunas
-//       cosas que te gustan.
+// cosas que te gustan.
+
+let comidasFavoritas = ["asado", "pastel de papas", "hamburguesa", "pizza"];
 
 /*
     Tamaño del Array
@@ -57,6 +59,8 @@
 
 // TAREA: Verifique cuántos valores tiene en su array comidasFavoritas.
 // imprimí utilizando console.log el resultado.
+
+// console.log(comidasFavoritas.length);
 
 /*
     Uso del Array
@@ -79,6 +83,8 @@
 
 // TAREA: Obtené el tercer elemento de tu array comidasFavoritas e imprimilo utilizando console.log.
 
+// console.log(comidasFavoritas[0]);
+
 /*
     Cambio de Valores en Arrays
     =========================
@@ -99,7 +105,11 @@
 // TAREA: Toma tu array de comidasFavoritas y reemplaza el primer valor
 // con cualquier otra cosa.
 
+// comidasFavoritas[0] = "parrillada";
+
 // TAREA: console.log todo el array para verificar.
+
+// console.log(comidasFavoritas);
 
 // TIP: ¡No te olvides que las posiciones de índice comienzan desde 0!
 
@@ -120,7 +130,11 @@
 
 // TAREA: Extendamos tu lista de comidasFavoritas y agreguemos un valor más.
 
+// comidasFavoritas.push("sorrentinos");
+
 // TAREA: console.log todo el array para verificar.
+
+// console.log(comidasFavoritas);
 
 /*
     Nota acerca Arrays constantes
@@ -145,9 +159,18 @@
 
 // TAREA: Intenta crear un array como una constante y modifica los valores que contiene.
 
+// const autos = ["Ford", "Toyota", "McLaren"];
+
 // TAREA: Observa lo que sucede si agregas algo con.push(), cambias algo
-//       con notación de corchetes (array[1]) y
-//       asigna un nuevo array completamente nuevo a la constante
+// con notación de corchetes (array[1]) y
+// asigna un nuevo array completamente nuevo a la constante
+
+// autos.push("Koenigsegg");
+// autos[1] = "Nissan";
+
+// const autos = ["Ferrari", "Lamborghini", "Bugatti"];
+
+// console.log(autos);
 
 /*
     Bucles
@@ -199,6 +222,12 @@
 // TAREA: Usando un bucle 'while', decile a tu computadora que registre los números de
 //       diez a uno.
 
+// number = 0;
+// while (number <= 10) {
+//   console.log(number);
+//   number = number + 1;
+// }
+
 /*
     Bucles for (para)
     ==========
@@ -215,6 +244,11 @@
 */
 
 // TAREA: Imprimí cada 3er número del 3 al 22 usando un 'bucle for'.
+
+// let i
+// for (i = 3; i <= 22; i = i + 3) {
+//   console.log(i);
+// }
 
 /*
     Iterando a traves de Arrays
@@ -238,6 +272,10 @@
 */
 
 // TAREA: Probalo con tu comidasFavoritas array.
+
+// for (let i = 0; i < comidasFavoritas.length; i++) {
+//   console.log("Me gusta el " + comidasFavoritas[i]);
+// }
 
 /*
     Bucles y Lógica
