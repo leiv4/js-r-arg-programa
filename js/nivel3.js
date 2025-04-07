@@ -122,6 +122,9 @@
 //       variable llamada nuestroTitulo.
 //       Utilizá console.log para ver lo que obtuviste!
 
+// const nuestroTitulo = document.querySelector("h1");
+// console.log(nuestroTitulo);
+
 /*
     Obteniendo elementos similares.
     ========================
@@ -143,7 +146,13 @@
 // elementos li que hay con mediaLinks.length
 
 // TAREA: ¿Te acordás de los bucles del nivel 2? Usando lo que sabés de ellos, realizá iteraciones
-//      sobre cada item de mediaLinks y mostralos en pantalla con console.log
+// sobre cada item de mediaLinks y mostralos en pantalla con console.log
+
+// const mediaLinks = document.querySelectorAll("li");
+// console.log(mediaLinks.length);
+// for (let i = 0; i < mediaLinks.length; i++) {
+//   console.log(mediaLinks[i]);
+// }
 
 /*
     Propiedades de los elementos
@@ -162,6 +171,10 @@
 // TAREA: Obtené el contenido de nuestro elemento 'h1'
 // y utilizá console.log para mostrarlo.
 
+// const nuestroTitulo = document.querySelector("h1");
+// nuestroTitulo.textContent; // 'Muses Code JS'
+// console.log(nuestroTitulo.textContent); // 'Muses Code JS'
+
 /*
     Editar el contenido de la página
     ====================
@@ -178,6 +191,10 @@
 
 // TAREA: Hagamos un nuevo título! Cambiá el contenido de nuestro 'h1' y ponele lo que quieras.
 
+// const nuestroTitulo = document.querySelector("h1");
+// nuestroTitulo.textContent = "NiCode JS";
+// console.log(nuestroTitulo.textContent); // 'NiCode JS'
+
 /*
     Editando atributos
     ==================
@@ -191,6 +208,9 @@
 */
 
 // TAREA: Actualizá el valor del atributo 'src' de nuestra etiqueta 'img' a "img/kittens.jpeg".
+
+const nuestroGato = document.querySelector("img");
+nuestroGato.src = "img/kittens.jpeg";
 
 /*
     Editando estilos
@@ -212,8 +232,11 @@
 
 // Tarea: Obtené cualquier elemento de la página y cambiale algunos estilos.
 
+// const footer = document.querySelector("footer");
+// footer.style.backgroundColor = "purple";
+
 /*
-   Creando nuevos nodos (Elementos)
+    Creando nuevos nodos (Elementos)
     =============================
 
     El objeto "document" también nos da maneras de crear nodos desde cero.
@@ -232,10 +255,16 @@
 */
 
 // Tarea: Todavía seguís teniendo a los gatitos en tu pantalla? A mí me gusta el logo y los gatitos.
-//       Creá una nueva imagen con nuestro logo como fuente, y ponela
-//       en nuestra cabecera.
-//
+// Creá una nueva imagen con nuestro logo como fuente, y ponela
+// en nuestra cabecera.
+
 // P.S. También les podés dar estilos al nuevo nodo que creaste.
+
+// const $img = document.createElement("img");
+// $img.src = "img/woman_bw.jpg";
+// const $body = document.querySelector("body");
+// $body.appendChild($img); // Agregamos la imagen al body que es el padre de la imagen
+// $img.style.width = "200px"; // Cambiamos el tamaño de la imagen
 
 ////////////////////////////////////////////////////////////////////////////
 // ¡Felicidades! ¡Has terminado el Nivel 3 de JavaScript Básico!          //
