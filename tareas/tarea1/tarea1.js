@@ -1,24 +1,56 @@
-const $form = document.querySelector("form");
-
 //Para evitar que el formulario se envíe y recargue la página, podemos usar el evento 'submit' y prevenir su comportamiento por defecto.
-$form.addEventListener("submit", function (e) {
+const $formDistancia = document.querySelector("#form-distancia");
+$formDistancia.addEventListener("submit", function (e) {
   e.preventDefault();
   return false;
 });
 
-function promedio() {
-  const num1 = document.querySelector("#num1").value;
-  const num2 = document.querySelector("#num2").value;
-  const num3 = document.querySelector("#num3").value;
+const $formVelocidad = document.querySelector("#form-velocidad");
+$formVelocidad.addEventListener("submit", function (e) {
+  e.preventDefault();
+  return false;
+});
 
-  return (parseFloat(num1) + parseFloat(num2) + parseFloat(num3)) / 3;
+const $calcularPromedioDistancia = document.querySelector(
+  "#calcular-promedio-distancia"
+);
+
+const $calcularPromedioVelocidad = document.querySelector(
+  "#calcular-promedio-velocidad"
+);
+
+function calcularPromedio(números) {
+  let acumulador = 0;
+  for (let i = 0; i < números.length; i++) {
+    acumulador += números[i];
+  }
+  return acumulador / números.length;
 }
 
-function clickCalcular() {
-  const mensajePromedio = promedio();
-  const calcular = `El promedio es:  ${mensajePromedio}`;
-  document.querySelector("#promedio").textContent = calcular;
-}
+$calcularPromedioDistancia.addEventListener("click", function () {
+  const $distancia = document.querySelectorAll(".distancia");
 
-const $calcular = document.querySelector("#calcular");
-$calcular.addEventListener("click", clickCalcular);
+  let distancia = [];
+
+  for (let i = 0; i < $distancia.length; i++) {
+    distancia.push(parseFloat($distancia[i].value));
+  }
+
+  const promedio = calcularPromedio(distancia);
+  document.querySelector("#promedio-distancia").innerHTML =
+    "El promedio de distancia es: " + Math.ceil(promedio);
+});
+
+$calcularPromedioVelocidad.addEventListener("click", function () {
+  const $velocidad = document.querySelectorAll(".velocidad");
+
+  let velocidad = [];
+
+  for (let i = 0; i < $velocidad.length; i++) {
+    velocidad.push(parseFloat($velocidad[i].value));
+  }
+
+  const promedio = calcularPromedio(velocidad);
+  document.querySelector("#promedio-velocidad").innerHTML =
+    "El promedio de velocidad es: " + Math.ceil(promedio);
+});
